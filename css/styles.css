@@ -245,6 +245,7 @@ a:link, a:visited,  a:active, a:hover {
     color: #8B8B8B;
     padding: 10px 20px;
     margin-top: 6%;
+    margin-left: 0;
     background: #fff;
     cursor: pointer;
     border: 1px solid #ccc;
