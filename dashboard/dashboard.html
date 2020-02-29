@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script type="text/javascript" src="../js/chartGenerator.js"></script>
+    <script type="text/javascript" src="../js/calendar.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="w-100 shadow m-0 bg-white" id="top">
+        <div class="row">
+            <div class="col-3 p-4 ml-5 ">
+ 
+                <!-- Advotics logo -->
+                <img id="logo1" src="../img/logo.png" alt="logo1">
+                <div id="adv">
+                    powered by
+                    <span class="mt-3">
+                            <img id="logo2" src="../img/logo.png" alt="logo2">
+                    </span>
+                </div>
+            </div>
+            <div class="col-6">
+            </div>
+
+            <!-- User -->
+            <div class="col-1 mt-2 p-3 text-center" id="user">
+                <div id="username">
+                    Username
+                </div>
+                Company Name
+            </div>
+            <div class="col-sm-1 p-3 mt-2">
+                <img id="profile" src="../img/Profile.svg" alt="profile">
+                <img id="logout" src="../img/logout@2x.png" alt="logout">
+            </div>
+        </div>
+    </div>
+
+    <!-- content -->
+    <div class="w-100 m-0" id="content">
+        <div class="row">
+            <div class="col-sm-1 p-0 bg-white">
+                    <div class="my-5" id="menu">
+                        <img src="../img/menu.png" alt="menu">
+                    </div>
+                    <div  id="dashboard">
+                        <div id="dash">
+                            <img src="../img/Dashboard icon.svg">
+                        </div>
+                    </div>
+            </div>
+            <span class="col-sm-11">
+                <div class="row">
+                    <div class="col-sm-2" id="page">
+                        Dashboard
+                    </div>
+                    <span class="col-sm-6">
+
+                    </span>
+                    <span class="col-sm-3 test" id="reportrange">
+                            <img id="calendar" src="../img/calendar (1).png" alt="calendar">
+                            &emsp;Period&emsp;
+                            <span></span> <i class="fa fa-angle-down" id="up"></i>
+                    </span>
+                    <div class="col-sm-11 py-3" id="market">
+                        MARKET INSIGHT
+                        <span class="float-right">
+                            <img src="../img/Help@2x.png">
+                            <a href="#">Click Here for Help</a>
+                            <i class="fa fa-angle-up" id="up"></i>
+                        </span>
+                    </div>
+                    <img id="sales" src="../img/Group 645.svg">
+                    
+                    <div class="col-sm-8"></div>
+
+                    <div class="col-sm-4 ml-5 mr-4 my-4 bg-white">
+                        <div class="ml-4 my-4" id = "apv">
+                            AVERAGE PURCHASE VALUE
+                            <span id="spaceChart"></span>
+                            <span class="col-sm-3">
+                                <span class="dropdown">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle bg-white" data-toggle="dropdown">
+                                        Last 6 Months
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <span class="dropdown-item" href="#">Last 7 Days</span>
+                                        <span class="dropdown-item" href="#">Last Month</span>
+                                        <span class="dropdown-item" href="#">Last 6 Months</span>
+                                    </div>
+                                </span>
+                                <img id="more" src="../img/Icon - More - Filled.svg"  alt="more">
+                            </span>
+                        </div>
+                        <div id="chartContainer"></div>
+                    </div>
+                    <div class="col-sm-3 my-4 ml-5 mr-4 bg-white" id="apv">
+                        <div class="ml-2 my-3" id="apv">
+                            BEST SELLING SKU
+                            <img id="more1" src="../img/Icon - More - Filled.svg"  alt="more1">   
+                                <div class="productContainer mt-2">
+                                    <div class="prod mr-1">
+                                        <img id="danone" src="../img/danone-milk.png" alt="danone">
+                                    </div>
+                                    <div class="prod1">
+                                        [Nama Product] <br/>
+                                        <span class="prodSell">
+                                            Rp XXXX &emsp;[jml terjual]
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="productContainer1 mt-2 mb-2 border">
+                                    <div class="prod2 mr-1">
+                                        <img id="prodComp" src="../img/danone1.png" alt="danone">
+                                    </div>
+                                    <div class="prod3">
+                                        [Nama Product] <br/>
+                                        <span class="prodSell">
+                                            Rp XXXX &emsp;[jml terjual]
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="productContainer1 mt-2 mb-2 border">
+                                    <div class="prod2 mr-1">
+                                        <img id="prodComp" src="../img/danone1.png" alt="danone">
+                                    </div>
+                                    <div class="prod3">
+                                        [Nama Product] <br/>
+                                        <span class="prodSell">
+                                            Rp XXXX &emsp;[jml terjual]
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="productContainer1 mt-2 mb-2 border">
+                                    <div class="prod2 mr-1">
+                                        <img id="prodComp" src="../img/danone1.png" alt="danone">
+                                    </div>
+                                    <div class="prod3">
+                                        [Nama Product] <br/>
+                                        <span class="prodSell">
+                                            Rp XXXX &emsp;[jml terjual]
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="productContainer1 mt-2 mb-2 border">
+                                    <div class="prod2 mr-1">
+                                        <img id="prodComp" src="../img/danone1.png" alt="danone">
+                                    </div>
+                                    <div class="prod3">
+                                        [Nama Product] <br/>
+                                        <span class="prodSell">
+                                            Rp XXXX &emsp;[jml terjual]
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-3 my-4 mr-4 ml-5 bg-white" id="apv">
+                        <div class="ml-2 my-3" id="apv">
+                            BEST SELLING SKU
+                            <img id="more1" src="../img/Icon - More - Filled.svg"  alt="more1">   
+                            <div class="productContainer mt-2">
+                                <div>
+                                    <div class="prod mr-1 mb-2">
+                                        <img id="prodComp" src="../img/Product  Competitor.png" alt="danone">
+                                    </div>
+                                    <div class="prod1">
+                                        [Nama Product] <br/>
+                                        <span class="prodSell">
+                                            Rp XXXX &emsp;[jml terjual]
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="productContainer1 mt-2 mb-2 border">
+                                    <div class="prod2 mr-1">
+                                        <img id="prodComp" src="../img/Product  Competitor.png" alt="danone">
+                                    </div>
+                                    <div class="prod3">
+                                        [Nama Product] <br/>
+                                        <span class="prodSell">
+                                            Rp XXXX &emsp;[jml terjual]
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="productContainer1 mt-2 mb-2 border">
+                                    <div class="prod2 mr-1">
+                                        <img id="prodComp" src="../img/Product  Competitor.png" alt="danone">
+                                    </div>
+                                    <div class="prod3">
+                                        [Nama Product] <br/>
+                                        <span class="prodSell">
+                                            Rp XXXX &emsp;[jml terjual]
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="productContainer1 mt-2 mb-2 border">
+                                    <div class="prod2 mr-1">
+                                        <img id="prodComp" src="../img/Product  Competitor.png" alt="danone">
+                                    </div>
+                                    <div class="prod3">
+                                        [Nama Product] <br/>
+                                        <span class="prodSell">
+                                            Rp XXXX &emsp;[jml terjual]
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="productContainer1 mt-2 mb-2 border">
+                                    <div class="prod2 mr-1">
+                                        <img id="prodComp" src="../img/Product  Competitor.png" alt="danone">
+                                    </div>
+                                    <div class="prod3">
+                                        [Nama Product] <br/>
+                                        <span class="prodSell">
+                                            Rp XXXX &emsp;[jml terjual]
+                                        </span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </span>        
+        </div>
+    </div>
+</body>
+
+</html>

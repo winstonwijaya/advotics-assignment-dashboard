@@ -1,0 +1,253 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+#top{
+    position: relative;
+    z-index: 2;
+}
+
+#logo1{
+    width: 50%;
+    margin-left: 2%;
+}
+
+#logo2{
+    width: 25%;
+}
+
+#adv{
+    margin-top: -8%;
+    margin-left: 55%;
+}
+
+#profile{
+    width: 40%;
+    margin-right: 15%;
+}
+
+
+#auto{
+    display: block;
+    width: fit-content;
+}
+
+#user{
+    text-align: center;
+    margin-right: -1%;
+    color: #727272;
+    font-size: small;
+    font-family: 'Open Sans', Light;
+}
+
+#username{
+    font-size: large;
+}
+
+#content{
+    background-color: #F7F7F7;
+}
+
+#menu{
+    width: 20%;
+    margin: 0 auto;
+}
+
+#dashboard{
+    min-height: 130px;
+    background-color: #D2D2D2;
+}
+
+#dash{
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 30%;
+    background-color: white;
+
+    position: relative;
+    transform: translateY(80%);
+}
+
+#page{
+    color: #707070C4;
+    font-weight: bold ;
+    font-size: 60px;
+    font-family: 'Source Sans Pro';
+
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+#calender{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+#market{
+    margin-left: 3%;
+    margin-top: 2%;
+    background-color: #37B04C;
+
+
+    font-size: xx-large;
+    font-family: 'Sans Pro';
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+
+a:link, a:visited,  a:active, a:hover {
+    color: #FFFFFF;
+    font-family: 'Sans Pro';
+    font-size: medium;
+    text-decoration: underline;
+    margin-left: 5px;
+    /* margin-right: 1%; */
+}
+
+#up, #down{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 13px;
+}
+
+#sales{
+    margin-top: 2%;
+    margin-left: 2.5%;
+    width: 20%;
+}
+
+#chartContainer{
+    height: 300px;
+    width: 100%;
+}
+
+#apv{
+    font-family: 'Sans Pro';
+    font-size: large;
+    color: #4D4F5C;
+}
+
+#spaceChart{
+    margin-right: 12%;
+}
+
+.btn.btn-secondary.dropdown-toggle{
+    text-decoration: none;
+    color: #4D4F5C;
+}
+
+#more{
+    margin-left: 2%;
+    width: 2%;
+}
+
+#more1, #more2{
+    width: 4%;
+}
+
+#more1{
+    margin-left: 50%;
+}
+
+#more2{
+    margin-left: 45%;
+}
+
+#danone{
+    width: 100%;
+}
+
+#prodComp{
+    width: 75%;
+}
+
+.productContainer, .productContainer1{
+    border-radius: 10px;
+}
+
+.productContainer{
+    background-color: #FFE7BD;
+}
+
+/* .productContainer1{
+
+} */
+
+.prod, .prod1, .prod2, .prod3{
+    font-size: larger;
+    display: inline-block;;
+}
+
+.prod{
+    width: 35%;
+}
+
+.prod1{ 
+    width: 42.5%;
+    font-weight: bold;
+}
+
+.prod2{
+    width: 25%;
+}
+
+.prod3{
+    font-size: medium;
+    width: 50%;
+    font-weight: bold;
+}
+
+.prodSell{
+    color: #00000099;
+    font-size: medium;
+    font-weight: normal;
+}
+
+.daterangepicker{
+    color: #999AA7;
+}
+
+.daterangepicker td.in-range, .daterangepicker td.start-date, .daterangepicker td.active:hover, .daterangepicker td.available:hover{
+    background-color: #D5ECD9;
+    color: #55B367;
+    font-weight: bold;
+    border-radius: 50%;
+}
+
+.daterangepicker .drp-calendar.left, .daterangepicker .drp-calendar.right{
+    color: #7B7A8D;
+}
+
+.daterangepicker .ranges li{
+    padding: 10px 10px;
+    margin-left: 12%;
+    margin-right: 12%;
+    border-bottom: 1px solid #999AA7;
+}
+
+.daterangepicker .ranges li.active {
+    background-color: #3BA445;
+    border: none;
+}
+
+.daterangepicker .drp-buttons .btn{
+    background-color: #3BA445;
+    border: none;
+    color: #FFFFFF;
+    float: left;
+    margin: 2% 2%;
+}
+
+#reportrange{
+    color: #8B8B8B;
+    padding: 10px 20px;
+    margin-top: 6%;
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-height: 48px;
+}
