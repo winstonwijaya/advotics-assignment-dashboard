@@ -210,7 +210,8 @@ a:link, a:visited,  a:active, a:hover {
     color: #999AA7;
 }
 
-.daterangepicker td.in-range, .daterangepicker td.start-date, .daterangepicker td.active:hover, .daterangepicker td.available:hover{
+.daterangepicker td.in-range, .daterangepicker td.start-date, .daterangepicker td.active:hover,
+.daterangepicker td.available:hover, .daterangepicker td.start-date.end-date{
     background-color: #D5ECD9;
     color: #55B367;
     font-weight: bold;
